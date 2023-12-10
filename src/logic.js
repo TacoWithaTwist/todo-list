@@ -19,15 +19,15 @@ class Project {
           break;
       }
     };
-    this.addNewTask = function (content, isChecked) {
-      const aux = new Task(content, isChecked);
+    this.addNewTask = function (taskContent, isChecked) {
+      const aux = new Task(taskContent, isChecked);
       this.taskList.push(aux);
     };
   }
 }
 class Task {
-  constructor(content, isChecked) {
-    this.content = content;
+  constructor(taskContent, isChecked) {
+    this.taskContent = taskContent;
     this.isChecked = isChecked;
     this.markedForRemoval = false;
     this.check = function () {
