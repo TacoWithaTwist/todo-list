@@ -1,4 +1,3 @@
 import { Project, Task, addProject } from "./logic.js";
-export function pageLoad() {
-  const content = document.getElementById("content");
-}
+import { pageLoad } from "./pageLoad.js";
+pageLoad();
