@@ -38,14 +38,4 @@ class Task {
     };
   }
 }
-function addProject(dateStart, dateEnd, title, description, priority) {
-  const newProject = new Project(
-    dateStart,
-    dateEnd,
-    title,
-    description,
-    priority
-  );
-  return newProject;
-}
-export { Project, Task, addProject };
+export { Project, Task };
